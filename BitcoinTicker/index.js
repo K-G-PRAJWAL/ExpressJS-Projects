@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
+require("dotenv").config();
 
 const app = express();
 
@@ -11,13 +12,12 @@ app.get("/", function(req, res) {
 });
 
 app.post("/", function(req, res) {
+  var crypto = req.body.crypto;
+  var fiat = req.body.fiat;
 
-    var crypto = req.body.crypto;
-    var fiat = req.body.fiat;
+  var baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/";
 
-    var baseURL = "https://apiv2.bitcoinaverage.com/indices/global/ticker/";
-
-    var finalURL = baseURL + crypto + fiat;
+  var finalURL = baseURL + crypto + fiat;
 
   request(
     {
