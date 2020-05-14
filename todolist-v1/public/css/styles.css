@@ -1,8 +1,8 @@
 html {
-  background-color: #E4E9FD;
-  background-image: -webkit-linear-gradient(65deg, #73000d 50%, #E4E9FD 50%);
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #73000d 50%, #e4e9fd 50%);
   min-height: 1000px;
-  font-family: 'helvetica neue';
+  font-family: "helvetica neue";
 }
 
 h1 {
@@ -27,14 +27,14 @@ h1 {
   min-height: 70px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #F1F1F1;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .item:last-child {
   border-bottom: 0;
 }
 
-input:checked+p {
+input:checked + p {
   text-decoration: line-through;
   text-decoration-color: #73000d;
 }
@@ -51,7 +51,7 @@ p {
   color: #00204a;
 }
 
-form.item{
+form.item {
   text-align: center;
   margin-left: 20px;
 }
@@ -90,7 +90,7 @@ input[type="text"]:focus {
 }
 
 footer {
-  color: white;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0);
   text-align: center;
+  font-weight: bolder;
 }
