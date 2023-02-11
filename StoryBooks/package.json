@@ -20,7 +20,7 @@
     "moment": "^2.27.0",
     "mongoose": "^5.9.20",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.20",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0"
   }
